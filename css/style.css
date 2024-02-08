@@ -1,0 +1,61 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(30deg, hsl(285, 91%, 59%) 0%, hsl(288, 89%, 62%) 8%, hsl(292, 87%, 64%) 17%, hsl(295, 85%, 66%) 25%, hsl(300, 70%, 67%) 34%, hsl(304, 64%, 69%) 43%, hsl(309, 55%, 71%) 51%, hsl(310, 63%, 72%) 60%, hsl(312, 71%, 72%) 68%, hsl(313, 81%, 73%) 76%, hsl(312, 69%, 76%) 84%, hsl(310, 56%, 77%) 92%, hsl(308, 42%, 79%) 100%);
+  font-family: sans-serif;
+}
+
+.card {
+  width: 400px;
+  text-align: center;
+}
+.card__img {
+  border-radius: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+.card__body {
+  padding: 10px 20px;
+}
+.card__text {
+  margin: 20px 0;
+}
+.card__btns {
+  display: flex;
+  justify-content: space-around;
+}
+.card__btn {
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.card__btn--yes {
+  transition: background-color 0.3s;
+}
+.card__btn--yes form,
+.card__btn--yes input {
+  border: none;
+  background: none;
+}
+.card__btn--yes:hover {
+  background-color: pink;
+}
+.card__btn--no {
+  cursor: none;
+  transition: opacity 0.5s;
+}
+.card__btn--no:hover {
+  opacity: 0;
+}/*# sourceMappingURL=style.css.map */

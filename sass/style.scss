@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	min-height: 100vh;
+	background-image: linear-gradient(
+		30deg,
+		hsl(285deg 91% 59%) 0%,
+		hsl(288deg 89% 62%) 8%,
+		hsl(292deg 87% 64%) 17%,
+		hsl(295deg 85% 66%) 25%,
+		hsl(300deg 70% 67%) 34%,
+		hsl(304deg 64% 69%) 43%,
+		hsl(309deg 55% 71%) 51%,
+		hsl(310deg 63% 72%) 60%,
+		hsl(312deg 71% 72%) 68%,
+		hsl(313deg 81% 73%) 76%,
+		hsl(312deg 69% 76%) 84%,
+		hsl(310deg 56% 77%) 92%,
+		hsl(308deg 42% 79%) 100%
+	);
+	font-family: sans-serif;
+}
+.card {
+	width: 400px;
+	text-align: center;
+
+	&__img {
+		border-radius: 8px;
+		width: 100%;
+		overflow: hidden;
+	}
+
+	&__body {
+		padding: 10px 20px;
+	}
+
+	&__text {
+		margin: 20px 0;
+	}
+
+	&__btns {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	&__btn {
+		border: 1px solid black;
+		border-radius: 8px;
+		padding: 10px 20px;
+		cursor: pointer;
+		&--yes {
+			form,
+			input {
+				border: none;
+				background: none;
+			}
+			transition: background-color 0.3s;
+			&:hover {
+				background-color: pink;
+			}
+		}
+		&--no {
+			cursor: none;
+			transition: opacity 0.5s;
+			&:hover {
+				opacity: 0;
+			}
+		}
+	}
+}
